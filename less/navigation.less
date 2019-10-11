@@ -1,46 +1,70 @@
 // Navigation code here
 
-.nav-bar{
+.nav-bar {
     position: fixed;
     z-index: 999;
-    width:80%;
-   opacity: .7;
+    width: 80%;
+    opacity: .7;
 
     .flex();
     flex-wrap: wrap;
-    background:@nav-bg;
-    margin:0 10%;
-    border:@nav-border;
+    background: @nav-bg;
+    margin: 0 10%;
+    border: @nav-border;
 
 
 
-    @media @phone{
+    @media @phone {
         margin: 0;
         .flex();
         flex-wrap: wrap;
-        background:@nav-bg;
-        margin:0 10%;
-        border:@nav-border;
+        background: @nav-bg;
+        margin: 0 10%;
+        border: @nav-border;
         position: relative;
         opacity: 1;
         width: 100%;
-        right:10%;
+        right: 10%;
 
     }
 
 }
-    h1{
-        text-align: center;
-        padding:2% 0;
-        width:100%;
-        font-size:3.8rem;
-    }
 
-    nav{
-        .flex();
-        justify-content: space-around;
-        width:80%;
-        margin-bottom:2%;
+h1 {
+    text-align: center;
+    padding: 2% 0;
+    width: 100%;
+    font-size: 3.8rem;
+}
 
-    }
+nav {
+    .flex();
+    justify-content: space-around;
+    width: 80%;
+    margin-bottom: 2%;
 
+    a {
+        
+        &:hover {
+
+            animation-duration: 2s;
+            animation-name: bubble;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes bubble {
+            from {
+                font-size: 2.2rem;
+            }
+
+
+            to {
+                font-size: 4.2rem;
+            }
+        }
+
+    
+
+}
+
+}

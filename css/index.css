@@ -213,6 +213,19 @@ nav {
   width: 80%;
   margin-bottom: 2%;
 }
+nav a:hover {
+  animation-duration: 2s;
+  animation-name: bubble;
+  animation-iteration-count: 1;
+}
+@keyframes bubble {
+  from {
+    font-size: 2.2rem;
+  }
+  to {
+    font-size: 4.2rem;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
