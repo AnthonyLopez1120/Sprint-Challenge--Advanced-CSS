@@ -155,10 +155,41 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+a {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  text-decoration: none;
+  color: black;
+}
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #F6F6F6;
+  margin: 0 20%;
+}
+h1 {
+  text-align: center;
+  padding: 2% 0;
+  width: 100%;
+  font-size: 3.8rem;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  margin-bottom: 2%;
 }
 footer {
   color: #22283B;
