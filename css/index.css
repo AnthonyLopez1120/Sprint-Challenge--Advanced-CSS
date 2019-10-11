@@ -156,7 +156,7 @@ p {
   line-height: 1.4;
 }
 a {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: #454A59;
   font-size: 1.6rem;
   line-height: 1.4;
   text-decoration: none;
@@ -174,7 +174,8 @@ a {
   align-items: center;
   flex-wrap: wrap;
   background: #F6F6F6;
-  margin: 0 20%;
+  margin: 0 10%;
+  border: #F1F1F1;
 }
 h1 {
   text-align: center;
@@ -243,6 +244,19 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn {
+  background: #22283A;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 5px;
+  padding: 2% 0;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -250,5 +264,8 @@ footer {
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
+  border-radius: 10px;
+}
+.mainImg img {
   border-radius: 10px;
 }
