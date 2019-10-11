@@ -1,14 +1,31 @@
 // Navigation code here
 
 .nav-bar{
+    position: fixed;
+    z-index: 999;
+    width:80%;
+   opacity: .7;
+
     .flex();
     flex-wrap: wrap;
     background:@nav-bg;
     margin:0 10%;
     border:@nav-border;
 
+
+
     @media @phone{
         margin: 0;
+        .flex();
+        flex-wrap: wrap;
+        background:@nav-bg;
+        margin:0 10%;
+        border:@nav-border;
+        position: relative;
+        opacity: 1;
+        width: 100%;
+        right:10%;
+
     }
 
 }

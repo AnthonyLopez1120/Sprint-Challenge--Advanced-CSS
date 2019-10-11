@@ -168,6 +168,10 @@ a {
   margin: 0 auto;
 }
 .nav-bar {
+  position: fixed;
+  z-index: 999;
+  width: 80%;
+  opacity: 0.7;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -180,6 +184,18 @@ a {
 @media (max-width: 500px) {
   .nav-bar {
     margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #F6F6F6;
+    margin: 0 10%;
+    border: #F1F1F1;
+    position: relative;
+    opacity: 1;
+    width: 100%;
+    right: 10%;
   }
 }
 h1 {
@@ -292,6 +308,10 @@ footer {
     width: 95%;
     margin-left: 2%;
   }
+}
+.home .walk .walk-text .btn:hover {
+  background: white;
+  color: black;
 }
 .home .walk .walk-img {
   width: 46%;
